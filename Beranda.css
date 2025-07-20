@@ -1,0 +1,374 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: #fff;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #000;
+  /* z-index: 1; */
+}
+
+.section {
+  padding: 30px 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+/* Grid Film */
+.film-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: flex-start;
+}
+
+/* Card Film */
+.card {
+  position: relative;
+  width: 20%px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 20%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Card Film Kecil */
+.card.small {
+  width: 18%;
+  height: 20%;
+  background-color: #1e1e1e;
+}
+
+.card.small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Teks Judul & Rating */
+.title {
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.rating {
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  font-size: 0.8em;
+  color: #ccc;
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: blue;
+  padding: 2px 8px;
+  font-size: 0.75em;
+  border-radius: 4px;
+}
+
+.badge.red {
+  background-color: red;
+}
+
+/* Responsive */
+@media screen and (max-width: 60px) {
+  .card {
+    width: 45%;
+  }
+
+.card.small {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.card {
+  position: relative;
+  width: 13%;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.card.small {
+  width: 302px;
+  height: 162px;
+  background-color: #1e1e1e;
+}
+
+.card.small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.rating {
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  font-size: 0.8em;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: blue;
+  padding: 2px 8px;
+  font-size: 0.75em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.badge.red {
+  background-color: red;
+
+}
+#topfront,#topback{
+  display: flex;
+ margin-top: 55px;
+ /* margin-left: 50px; */
+}
+.nav-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  font-size: 1.8em;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 57px;
+  margin-top: 130px;
+  margin-left: 1%
+  cursor: hover;
+}
+/* Smartphone */
+ @media (max-width: 768px) {
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .film-grid {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  .card, .card.small {
+    width: 200px;
+    height: auto;
+  }
+
+  .card.small {
+    height: 140px;
+  }
+
+  .title {
+    font-size: 0.8em;
+  }
+
+  .rating {
+    font-size: 0.7em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

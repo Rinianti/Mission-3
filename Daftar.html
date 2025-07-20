@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daftar</title>
+  <link rel="stylesheet" href="Daftar.css" />
+</head>
+<body>
+  <div class="form-container">
+    <img src="images/Logo.png" alt="CHILL Logo" class="logo" />
+    <h2>Daftar</h2>
+    <p>Selamat datang!</p>
+
+    <form>
+      <div class="input-group">
+        <label>Username</label>
+        <input type="text" placeholder="Masukkan username" />
+      </div>
+
+      <div class="input-group password-group">
+        <label>Kata Sandi</label>
+        <input type="password" placeholder="Masukkan kata sandi" id="password1" />
+        <i class="fa-solid fa-eye toggle-password" onclick="togglePassword('password1', this)"></i>
+      </div>
+
+      <div class="input-group password-group">
+        <label>Konfirmasi Kata Sandi</label>
+        <input type="password" placeholder="Masukkan kata sandi" id="password2" />
+        <i class="fa-solid fa-eye toggle-password" onclick="togglePassword('password2', this)"></i>
+      </div>
+
+      <p class="login-link">Sudah punya akun? <a href="#">Masuk</a></p>
+
+      <button type="submit" class="btn-daftar">Daftar</button>
+
+      <div class="divider">Atau</div>
+
+      <button type="button" class="btn-google">
+        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" />
+        Daftar dengan Google
+      </button>
+    </form>
+  </div>
+<!-- <script>
+  function togglePassword(id, el) {
+      const input = document.getElementById(id);
+      if (input.type === "password") {
+        input.type = "text";
+        el.classList.remove("fa-eye");
+        el.classList.add("fa-eye-slash");
+      } else {
+        input.type = "password";
+        el.classList.remove("fa-eye-slash");
+        el.classList.add("fa-eye");
+      }
+    }
+  </script> -->
+</body>
+</html>

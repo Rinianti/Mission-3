@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.login-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Kotak login */
+.login-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  margin-top: 50px;
+}
+
+/* Logo */
+.logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.login-box h2 {
+  margin-bottom: 5px;
+}
+
+.welcome-text {
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: #ccc;
+}
+
+.login-box form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #888;
+  background-color: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+/* Password group (icon) */
+.password-group {
+  position: relative;
+}
+
+.password-group .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Link daftar & lupa */
+.link-group {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.link-group a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.link-group a:hover {
+  text-decoration: underline;
+}
+
+/* Tombol login */
+.btn-login {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background: #45a049;
+}
+
+.divider {
+  margin: 10px 0;
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Tombol Google */
+.btn-google {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #333;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.btn-google img {
+  width: 18px;
+  height: 18px;
+}
+
+/* ✅ Responsif untuk layar HP */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .welcome-text {
+    font-size: 12px;
+  }
+
+  .link-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
